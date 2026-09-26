@@ -8,8 +8,7 @@
     "docs"
   ],
   "scripts": {
-    "build": "node canary.js && tsc",
-    "prepare": "node canary.js"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "devDependencies": {
     "@playwright/test": "1.63.0"
